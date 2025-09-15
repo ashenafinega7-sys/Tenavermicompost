@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TENA Organic Fertilizers – Grow a Healthier Garden, Naturally</title>
+  <meta name="description" content="TENA Organic Fertilizers vermicompost: natural, safe, and sustainable fertilizer for home gardeners and small-scale farmers. Improves soil and plant health." />
+
+  <!-- Internal CSS only -->
+  <style>
+    :root{
+      --bg: #0b1722;
+      --bg-soft: #0f2232;
+      --card: #0f2534;
+      --brand: #4ade80; /* green */
+      --brand-2: #22d3ee; /* cyan */
+      --text: #e6f1f5;
+      --muted: #a8c0cc;
+      --accent: #ffd166;
+      --danger: #ff6b6b;
+      --radius: 18px;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+
+    /* Reset & base */
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji"; color:var(--text); background: radial-gradient(1200px 800px at 80% -10%, rgba(34,211,238,.08), transparent 60%), radial-gradient(900px 600px at 10% 10%, rgba(74,222,128,.08), transparent 60%), var(--bg); line-height:1.6}
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1200px;margin:0 auto;padding:0 20px}
+
+    /* Header */
+    header{position:sticky;top:0;z-index:50;background:rgba(11,23,34,.7);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid rgba(255,255,255,.05)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.3px}
+    .brand-icon{width:36px;height:36px;border-radius:10px;background:conic-gradient(from 210deg, var(--brand), var(--brand-2));display:grid;place-items:center;box-shadow:var(--shadow)}
+    .brand-icon svg{width:22px;height:22px;fill:#062314}
+    .nav-links{display:flex;gap:18px}
+    .nav-links a{padding:8px 12px;border-radius:999px;border:1px solid transparent}
+    .nav-links a:hover{border-color:rgba(255,255,255,.12);background:rgba(255,255,255,.04)}
+    .nav-cta{display:flex;gap:10px;align-items:center}
+    .btn{border:0;border-radius:999px;padding:12px 16px;font-weight:700;cursor:pointer;transition:.2s transform, .2s opacity, .2s background; display:inline-flex; align-items:center; gap:10px}
+    .btn:active{transform:translateY(1px)}
+    .btn-primary{background:linear-gradient(135deg, var(--brand), var(--brand-2)); color:#062314}
+    .btn-primary:hover{opacity:.9}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,.18)}
+
+    /* Mobile nav */
+    .menu-toggle{display:none;background:transparent;border:1px solid rgba(255,255,255,.18);padding:8px;border-radius:12px}
+    @media (max-width: 900px){
+      .nav-links{display:none}
+      .menu-toggle{display:inline-flex}
+    }
+
+    /* Hero */
+    .hero{position:relative;overflow:hidden}
+    .hero::before{
+      content:""; position:absolute; inset:0; background: radial-gradient(1200px 700px at 85% 10%, rgba(34,211,238,.18), transparent 60%), radial-gradient(900px 600px at 15% 20%, rgba(74,222,128,.18), transparent 60%);
+      pointer-events:none;
+    }
+    .hero-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:80px 0}
+    .eyebrow{display:inline-block;padding:6px 12px;border:1px solid rgba(255,255,255,.18);border-radius:999px;color:var(--muted);font-weight:600;letter-spacing:.3px}
+    .title{font-size:clamp(32px, 5vw, 56px);line-height:1.1;margin:18px 0 12px}
+    .tagline{font-size:clamp(16px, 2.2vw, 20px);color:var(--muted);max-width:55ch}
+    .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+    .hero-media{position:relative}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+    .hero-img{aspect-ratio: 4/3; background:linear-gradient(120deg, rgba(34,211,238,.25), rgba(74,222,128,.25)), url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22><defs><linearGradient id=%22g%22 x1=%220%22 x2=%221%22 y1=%220%22 y2=%221%22><stop stop-color=%22%2322d3ee%22 offset=%220%22/><stop stop-color=%22%234ade80%22 offset=%221%22/></linearGradient></defs><rect width=%22800%22 height=%22600%22 fill=%22%230b1722%22/><g fill=%22url(%23g)%22 opacity=%220.35%22><circle cx=%22400%22 cy=%22300%22 r=%22240%22/></g><g fill=%22%234ade80%22 opacity=%220.8%22><path d=%22M120 470c90-210 230-260 360-340-70 160-110 300-360 340z%22/></g></svg>'); background-size:cover; background-position:center}
+    .badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .badge{font-size:12px;padding:6px 10px;border-radius:999px;background:rgba(34,197,94,.14);border:1px solid rgba(74,222,128,.3);color:#b7ffd1}
+
+    /* Sections */
+    section{padding:80px 0}
+    .section-title{font-size:clamp(22px, 3.5vw, 36px);margin:0 0 14px}
+    .section-sub{color:var(--muted);max-width:70ch;margin:0 0 26px}
+
+    .grid{display:grid;gap:20px}
+    .grid-2{grid-template-columns: repeat(2, minmax(0,1fr))}
+    .grid-3{grid-template-columns: repeat(3, minmax(0,1fr))}
+    .grid-4{grid-template-columns: repeat(4, minmax(0,1fr))}
+    @media (max-width: 980px){.grid-4{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:repeat(2,1fr)}.hero-inner{grid-template-columns:1fr}.hero-media{order:-1}}
+    @media (max-width: 640px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01)); border:1px solid rgba(255,255,255,.1); border-radius:var(--radius); padding:20px; box-shadow:var(--shadow)}
+    .icon{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg, rgba(34,211,238,.15), rgba(74,222,128,.15));border:1px solid rgba(255,255,255,.15);margin-bottom:8px}
+
+    /* Problem/Solution */
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+    @media (max-width: 900px){.split{grid-template-columns:1fr}}
+    .callout{border-left:4px solid var(--brand);padding-left:16px}
+
+    /* Nutrient table */
+    table{width:100%;border-collapse:separate;border-spacing:0 10px}
+    th, td{padding:14px 16px;text-align:left}
+    th{color:var(--muted);font-weight:600}
+    tbody tr{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01)); border:1px solid rgba(255,255,255,.08)}
+    tbody tr td:first-child{border-top-left-radius:12px;border-bottom-left-radius:12px}
+    tbody tr td:last-child{border-top-right-radius:12px;border-bottom-right-radius:12px}
+
+    /* Usage cards */
+    .usage{display:grid;gap:16px;grid-template-columns:repeat(2,minmax(0,1fr))}
+    @media (max-width:720px){.usage{grid-template-columns:1fr}}
+
+    /* Footer */
+    footer{padding:40px 0;border-top:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03)}
+    .footer-grid{display:grid;gap:20px;grid-template-columns:1.2fr .8fr}
+    @media (max-width:800px){.footer-grid{grid-template-columns:1fr}}
+    .socials{display:flex;gap:12px;flex-wrap:wrap}
+    .socials a{border:1px solid rgba(255,255,255,.18);padding:8px 12px;border-radius:999px}
+
+    /* Reveal animations */
+    .reveal{opacity:0;transform:translateY(12px);transition:opacity .6s ease, transform .6s ease}
+    .reveal.visible{opacity:1;transform:none}
+
+    /* Utility */
+    .muted{color:var(--muted)}
+    .center{text-align:center}
+    .caps{letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--muted);font-size:12px}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid rgba(255,255,255,.12);border-radius:999px}
+.card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 35px rgba(0,0,0,.45);
+}
+
+    /* Floating CTA */
+    .float-cta{position:fixed;right:16px;bottom:16px;z-index:40}
+  </style>
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header>
+    <div class="container nav">
+      <a href="#top" class="brand" aria-label="TENA Organic Fertilizers home">
+        <span class="brand-icon" aria-hidden="true">
+          <!-- leaf icon -->
+          <!-- <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C7 5 3 10 3 15a6 6 0 0 0 6 6c5 0 10-4 12-9 0 0-4 2-8 0-4-2-4-6-1-9Z"></path></svg> -->
+<img src="n.png" alt="">
+        </span>
+        <span>TENA Organic Fertilizers</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#benefits">Benefits</a>
+        <a href="#how">How It Works</a>
+        <a href="#product">Product</a>
+        <a href="#usage">Usage</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <button class="btn btn-ghost menu-toggle" aria-label="Open Menu" id="menuToggle">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <a href="#product" class="btn btn-primary">Shop Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="eyebrow">Natural • Safe • Sustainable</span>
+          <h1 class="title">Grow a Healthier Garden, Naturally</h1>
+          <p class="tagline">The organic solution for thriving plants and living soil. Replace chemical fertilizers with <strong>TENA Organic Fertilizers vermicompost</strong>—made from 100% natural ingredients, safe for children and pets.</p>
+          <div class="badges" role="list" aria-label="Key highlights">
+            <span class="badge">100% Organic</span>
+            <span class="badge">Soil-First Approach</span>
+            <span class="badge">Eco‑Friendly</span>
+          </div>
+          <div class="hero-cta">
+            <a href="#product" class="btn btn-primary">Shop Now</a>
+            <a href="#benefits" class="btn btn-ghost">See Benefits</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="hero-card hero-img" role="img" aria-label="Lush, healthy garden representing the results of using organic fertilizers."></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem / Solution -->
+    <section id="problem" class="reveal">
+      <div class="container split">
+        <div class="card">
+          <h2 class="section-title">The Problem with Chemical Fertilizers</h2>
+          <p class="section-sub">Overuse of synthetic fertilizers can degrade soil health, reduce water retention, and harm the environment—leaving plants dependent and soils lifeless.</p>
+          <ul>
+            <li>Poor soil structure and microbial life</li>
+            <li>Increased runoff and environmental impact</li>
+            <li>Potential risks for families, pets, and pollinators</li>
+          </ul>
+        </div>
+        <div class="card callout">
+          <h2 class="section-title">The TENA Solution</h2>
+          <p class="section-sub">TENA vermicompost revitalizes soil with organic matter and balanced nutrients—improving structure and water retention so plants absorb more, naturally.</p>
+          <ul>
+            <li>Made from 100% natural, organic ingredients</li>
+            <li>Boosts nutrient uptake for stronger plants</li>
+            <li>Safe for children and pets; eco‑friendly</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="benefits" class="reveal">
+      <div class="container">
+        <h2 class="section-title center">Key Benefits</h2>
+        <p class="section-sub center">A healthy garden starts with living soil. TENA supports both.</p>
+        <div class="grid grid-4">
+          <div class="card">
+            <div class="icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 12c4-2 6-6 8-9 2 3 4 7 8 9-3 4-7 6-8 9-1-3-5-5-8-9Z" stroke="currentColor" stroke-width="2"/></svg></div>
+            <h3>Nourishes soil & plants</h3>
+            <p class="muted">Feeds soil microbes and roots for balanced, steady growth.</p>
+          </div>
+          <div class="card">
+            <div class="icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8c3 2 11 2 14 0M5 16c3 2 11 2 14 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <h3>Increases water retention</h3>
+            <p class="muted">Organic matter improves structure so soil holds moisture longer.</p>
+          </div>
+          <div class="card">
+            <div class="icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <h3>Enhances nutrient absorption</h3>
+            <p class="muted">Improved CEC and biology help plants take up more nutrients.</p>
+          </div>
+          <div class="card">
+            <div class="icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12a7 7 0 1 0 14 0 7 7 0 0 0-14 0Zm3 0a4 4 0 1 0 8 0" stroke="currentColor" stroke-width="2"/></svg></div>
+            <h3>Safe & non‑toxic</h3>
+            <p class="muted">Use around children, pets, and pollinators with confidence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" class="reveal">
+      <div class="container">
+        <h2 class="section-title center">How It Works</h2>
+        <p class="section-sub center">Three simple steps to healthier plants and living soil.</p>
+        <div class="grid grid-3">
+          <div class="card center">
+            <div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 20h16M7 20c0-4 2-7 5-7s5 3 5 7" stroke="currentColor" stroke-width="2"/><path d="M12 10c-2 0-4-2-4-4 0-1 1-3 4-3s4 2 4 3c0 2-2 4-4 4Z" stroke="currentColor" stroke-width="2"/></svg></div>
+            <h3>1) Apply to soil</h3>
+            <p class="muted">Spread TENA vermicompost around plants or across beds.</p>
+          </div>
+          <div class="card center">
+            <div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 12c5-3 7-7 9-9 2 2 4 6 9 9-5 3-7 7-9 9-2-2-4-6-9-9Z" stroke="currentColor" stroke-width="2"/></svg></div>
+            <h3>2) Enriches structure</h3>
+            <p class="muted">Organic matter improves tilth & water-holding capacity.</p>
+          </div>
+          <div class="card center">
+            <div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M5 10c3 2 11 2 14 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <h3>3) Plants absorb more</h3>
+            <p class="muted">Roots access nutrients efficiently for vigorous growth.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Details -->
+    <section id="product" class="reveal">
+      <div class="container">
+        <div class="grid grid-2">
+          <div>
+            <h2 class="section-title">TENA Organic Fertilizers – Vermicompost</h2>
+            <p class="section-sub">Balanced nutrients and rich organic matter for resilient, productive plants.</p>
+            <div class="pill" style="margin-bottom:12px"><span class="caps">Guaranteed Nutrient Values</span></div>
+            <div class="card">
+              <table aria-label="Guaranteed nutrient values for TENA vermicompost">
+                <thead>
+                  <tr><th>Parameter</th><th>Value</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Organic Matter</td><td>35–45%</td></tr>
+                  <tr><td>Total Nitrogen (N)</td><td>1.8%</td></tr>
+                  <tr><td>Phosphorus (P<sub>2</sub>O<sub>5</sub>)</td><td>1.5%</td></tr>
+                  <tr><td>Potassium (K<sub>2</sub>O)</td><td>1.2%</td></tr>
+                  <tr><td>Moisture</td><td>25–30%</td></tr>
+                  <tr><td>pH</td><td>6.5–7.5</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="hero-cta" style="margin-top:18px">
+              <a href="#usage" class="btn btn-ghost">How to Use</a>
+              <a href="#contact" class="btn btn-primary" aria-label="Contact to order">Order / Contact</a>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <h3 style="margin-top:0">Quick Rate Helper</h3>
+              <p class="muted">Estimate how much TENA you need. This tool is a guide—adjust for local conditions.</p>
+              <div style="display:grid;gap:12px;grid-template-columns:1fr 1fr">
+                <label>Application Type
+                  <select id="rateType" style="width:100%;padding:10px;border-radius:10px;background:#0c1d2a;border:1px solid rgba(255,255,255,.18);color:var(--text)">
+                    <option value="seedlings">Seedlings/Vegetables</option>
+                    <option value="cereals">Cereals & Field Crops</option>
+                    <option value="flowers">Flowers & Gardens</option>
+                    <option value="trees">Fruit Trees</option>
+                  </select>
+                </label>
+                <label>Area / Count
+                  <input id="rateArea" type="number" min="1" value="100" placeholder="e.g., 100" style="width:100%;padding:10px;border-radius:10px;background:#0c1d2a;border:1px solid rgba(255,255,255,.18);color:var(--text)" />
+                </label>
+              </div>
+              <div style="display:grid;gap:12px;grid-template-columns:1fr 1fr;margin-top:10px">
+                <label>Unit
+                  <select id="rateUnit" style="width:100%;padding:10px;border-radius:10px;background:#0c1d2a;border:1px solid rgba(255,255,255,.18);color:var(--text)">
+                    <option value="plants">Plants</option>
+                    <option value="hectares">Hectares</option>
+                  </select>
+                </label>
+                <label>Suggested Range
+                  <input id="rateRange" type="text" aria-readonly="true" readonly value="250–500 g / plant" style="width:100%;padding:10px;border-radius:10px;background:#0c1d2a;border:1px solid rgba(255,255,255,.18);color:var(--text)" />
+                </label>
+              </div>
+              <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+                <button class="btn btn-primary" id="calcBtn">Calculate Need</button>
+                <button class="btn btn-ghost" id="resetBtn">Reset</button>
+              </div>
+              <div id="calcOut" class="muted" style="margin-top:10px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Usage Instructions -->
+    <section id="usage" class="reveal">
+      <div class="container">
+        <h2 class="section-title center">Usage Instructions</h2>
+        <p class="section-sub center">Always mix well with soil and water after application.</p>
+        <div class="usage">
+          <div class="card">
+            <h3>Seedlings / Vegetables</h3>
+            <p class="muted">Apply <strong>250–500 g per plant</strong> around the root zone. Incorporate lightly into the topsoil.</p>
+          </div>
+          <div class="card">
+            <h3>Cereals & Field Crops</h3>
+            <p class="muted">Broadcast <strong>100–200 kg per hectare</strong> and incorporate before planting or at early growth stages.</p>
+          </div>
+          <div class="card">
+            <h3>Flowers & Gardens</h3>
+            <p class="muted">Apply <strong>1–2 handfuls per plant</strong> (approx. 80–150 g) and mulch over.</p>
+          </div>
+          <div class="card">
+            <h3>Fruit Trees</h3>
+            <p class="muted">Apply <strong>2–5 kg</strong> evenly around the drip line; gently mix into soil.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="reveal">
+      <div class="container">
+        <div class="grid grid-2">
+          <div>
+            <h2 class="section-title">Contact & Producer Information</h2>
+            <p class="section-sub">We’d love to help you choose the right application for your plants and crops.</p>
+            <div class="card">
+              <p><strong>Producer:</strong> TENA Organic Fertilizers</p>
+              <p><strong>Address:</strong> Sebeta, Ethiopia</p>
+              <p><strong>Phone:</strong> <a href="tel:+251984655656">+251‑984655656</a></p>
+              <p><strong>Email:</strong> <a href="mailto:biofertvermicompost@gmail.com">tenavermicompost1@gmail.com</a></p>
+              <div class="socials" style="margin-top:8px">
+                <a href="https://t.me/TenaVermicompost" target="_blank" rel="noopener">@TenaVermicompost (Telegram)</a>
+                <a href="https://facebook.com/TenaVermicompost" target="_blank" rel="noopener">@TenaVermicompost (Facebook)</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <h3 style="margin-top:0">Quick Message</h3>
+              <form id="contactForm" aria-label="Contact form">
+                <div style="display:grid;gap:12px;grid-template-columns:1fr 1fr">
+                  <label>Full Name<input required name="name" type="text" placeholder="Your name" style="width:100%;padding:10px;border-radius:10px;background:#0c1d2a;border:1px solid rgba(255,255,255,.18);color:var(--text)"></label>
+                  <label>Phone / Email<input required name="reply" type="text" placeholder="Phone or email" style="width:100%;padding:10px;border-radius:10px;background:#0c1d2a;border:1px solid rgba(255,255,255,.18);color:var(--text)"></label>
+                </div>
+                <label style="display:block;margin-top:12px">Message<textarea required name="message" rows="4" placeholder="What would you like to know?" style="width:100%;padding:10px;border-radius:10px;background:#0c1d2a;border:1px solid rgba(255,255,255,.18);color:var(--text)"></textarea></label>
+                <div style="display:flex;gap:10px;align-items:center;margin-top:12px">
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+                  <span id="formStatus" class="muted" role="status" aria-live="polite"></span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+<section id="testimonials" class="reveal">
+  <div class="container">
+    <h2 class="section-title center">What Farmers Say</h2>
+    <div class="grid grid-3">
+      <div class="card">
+        <p>“My vegetables are greener and healthier than ever. No chemicals needed!”</p>
+        <p class="muted">– Abebe, Home Gardener</p>
+      </div>
+      <div class="card">
+        <p>“The soil stays moist longer, and yields are up this season.”</p>
+        <p class="muted">– Almaz, Small-scale Farmer</p>
+      </div>
+      <div class="card">
+        <p>“Safe for my kids and pets. I’ll never go back to synthetic fertilizers.”</p>
+        <p class="muted">– Dawit, Flower Grower</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+    <div class="container footer-grid">
+      <p class="muted">© <span id="year"></span> TENA Organic Fertilizers • All rights reserved.</p>
+      <div style="text-align:right">
+        <a href="#top" class="btn btn-ghost" aria-label="Back to top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating CTA -->
+  <div class="float-cta">
+    <a href="#contact" class="btn btn-primary" aria-label="Order or contact TENA">Order Now</a>
+  </div>
+
+  <!-- Internal JS only -->
+  <script>
+    // Mobile menu: create a simple overlay menu on small screens
+    const menuToggle = document.getElementById('menuToggle');
+    menuToggle?.addEventListener('click', () => {
+      const existing = document.getElementById('mobileMenu');
+      if (existing) { existing.remove(); return; }
+      const menu = document.createElement('div');
+      menu.id = 'mobileMenu';
+      menu.style.position = 'fixed';
+      menu.style.inset = '60px 12px auto 12px';
+      menu.style.background = 'rgba(15,37,52,.98)';
+      menu.style.border = '1px solid rgba(255,255,255,.12)';
+      menu.style.borderRadius = '14px';
+      menu.style.padding = '12px';
+      menu.style.boxShadow = 'var(--shadow)';
+      menu.innerHTML = `
+        <a href="#benefits" class="btn btn-ghost" style="display:block;margin:6px 0">Benefits</a>
+        <a href="#how" class="btn btn-ghost" style="display:block;margin:6px 0">How It Works</a>
+        <a href="#product" class="btn btn-ghost" style="display:block;margin:6px 0">Product</a>
+        <a href="#usage" class="btn btn-ghost" style="display:block;margin:6px 0">Usage</a>
+        <a href="#contact" class="btn btn-ghost" style="display:block;margin:6px 0">Contact</a>
+      `;
+      document.body.appendChild(menu);
+      menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.remove()));
+    });
+
+    // Reveal on scroll
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      })
+    },{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Quick Rate Helper calculations
+    const rateType = document.getElementById('rateType');
+    const rateArea = document.getElementById('rateArea');
+    const rateUnit = document.getElementById('rateUnit');
+    const rateRange = document.getElementById('rateRange');
+    const calcOut = document.getElementById('calcOut');
+
+    const ranges = {
+      seedlings: { text: '250–500 g / plant', min: 0.25, max: 0.5, unit: 'kg_per_plant' },
+      cereals:   { text: '100–200 kg / hectare', min: 100, max: 200, unit: 'kg_per_hectare' },
+      flowers:   { text: '1–2 handfuls / plant (~0.08–0.15 kg)', min: 0.08, max: 0.15, unit: 'kg_per_plant' },
+      trees:     { text: '2–5 kg / tree', min: 2, max: 5, unit: 'kg_per_plant' }
+    };
+
+    function updateRange(){
+      const r = ranges[rateType.value];
+      rateRange.value = r.text;
+      rateUnit.innerHTML = rateType.value === 'cereals' ? '<option value="hectares">Hectares</option>' : '<option value="plants">Plants</option>';
+    }
+    updateRange();
+    rateType.addEventListener('change', updateRange);
+
+    function formatKg(kg){
+      if (kg < 1) return `${(kg*1000).toFixed(0)} g`;
+      return `${kg.toFixed(1)} kg`;
+    }
+
+    document.getElementById('calcBtn').addEventListener('click', ()=>{
+      const type = rateType.value;
+      const qty = Math.max(1, Number(rateArea.value)||0);
+      const r = ranges[type];
+
+      let minKg=0, maxKg=0;
+      if (r.unit === 'kg_per_hectare'){
+        minKg = r.min * qty;
+        maxKg = r.max * qty;
+      } else {
+        minKg = r.min * qty;
+        maxKg = r.max * qty;
+      }
+      calcOut.innerHTML = `For <strong>${qty}</strong> ${rateUnit.value.toLowerCase()}, you’ll need approximately <strong>${formatKg(minKg)}</strong> to <strong>${formatKg(maxKg)}</strong> of TENA.`;
+    });
+
+    document.getElementById('resetBtn').addEventListener('click', ()=>{
+      rateType.value = 'seedlings';
+      rateArea.value = 100;
+      rateUnit.value = 'plants';
+      updateRange();
+      calcOut.textContent = '';
+    });
+
+    // Simple client-side form handler (demo only)
+    const form = document.getElementById('contactForm');
+    const status = document.getElementById('formStatus');
+    form.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(form).entries());
+      // In production, send with fetch() to your backend or form service
+      console.log('Form submission (demo):', data);
+      status.textContent = 'Thanks! We will get back to you soon.';
+      form.reset();
+      setTimeout(()=> status.textContent = '', 5000);
+    });
+
+    // Respect reduced motion
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      document.documentElement.style.scrollBehavior = 'auto';
+    }
+  </script>
+</body>
+</html>
